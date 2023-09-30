@@ -1,0 +1,19 @@
+<mat-toolbar class="mx-auto border-x justify-between">
+    <a routerLink="home">Requisition Managment System</a>
+
+    <button mat-icon-button [matMenuTriggerFor]="notification">
+        <mat-icon
+            [matBadge]="1"
+            matBadgeColor="warn"
+            matTooltip="Notifications"
+        >assessment</mat-icon>
+    </button>
+
+    <mat-menu #notification="matMenu">
+        <div class="p-3 divide-y divide-solid">
+            <div class="pb-3 flex justify-between">
+                <span>c</span>
+            </div>
+        </div>
+    </mat-menu>
+</mat-toolbar>

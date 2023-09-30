@@ -3,10 +3,11 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-    Selamın Aleyküm
+    <app-header></app-header>
+    <router-outlet></router-outlet>
   `,
   styles: []
 })
 export class AppComponent {
-  title = 'reqmngsystem';
+  title = 'Requisition Managment System';
 }
